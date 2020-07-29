@@ -16,7 +16,7 @@ public class Bot {
     public static void main(String[] args) throws LoginException, IOException {
         JDABuilder builder = new JDABuilder(AccountType.BOT);        
         String token = new String(Files.readAllBytes(Paths.get("token.txt")));
-        builder.setToken("NzM3NTk4MDk1ODg5NTMwOTgx.Xx_rwQ.0Jz2GhsHkT9gaXbWBu3eDXYYSDE");
+        builder.setToken(process.env.token);
         builder.setStatus(OnlineStatus.ONLINE);
         builder.setActivity(Activity.playing("@Game Bot Nut for info"));
         builder.addEventListeners(new Commands());
