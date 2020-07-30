@@ -1,1 +1,1 @@
-worker java Bot.jar
+worker java Game_Bot_Nut-1.1-all.jar
